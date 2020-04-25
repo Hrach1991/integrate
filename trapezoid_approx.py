@@ -3,7 +3,7 @@ import sys
 
 def trapeziod_approx(f,a,b,n):
     h=(b-a)/float(n)
-    s=(f(a)+f(b))/2
+    s=(f(a)+f(b))/3
     for i in range(1,n):
         s=s+f(a+i*h)
     return s*h
